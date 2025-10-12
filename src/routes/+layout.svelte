@@ -3,6 +3,7 @@
 	import logo from "$lib/assets/asymm1024.png";
 	import github from "$lib/assets/github.svg";
 	import linkedin from "$lib/assets/linkedin.svg";
+	import BurgerMenu from "$lib/components/BurgerMenu.svelte";
 
 	let { children } = $props();
 </script>
@@ -34,6 +35,7 @@
 			>
 				<img src={linkedin} alt="linkedin" class="icon" />
 			</a>
+			<BurgerMenu />
 		</nav>
 	</header>
 
