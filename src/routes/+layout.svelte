@@ -18,11 +18,11 @@
 			<img src={logo} alt="logo" class="logo" />
 		</a>
 		<nav>
-			<a href="https://github.com/giacomopanzacchi" target="_blank">
+			<a href="https://github.com/gjace" target="_blank">
 				<img src={github} alt="github" class="icon" />
 			</a>
 			<a
-				href="https://www.linkedin.com/in/giacomopanzacchi"
+				href="https://www.linkedin.com/in/giacomo-panzacchi"
 				target="_blank"
 			>
 				<img src={linkedin} alt="linkedin" class="icon" />
