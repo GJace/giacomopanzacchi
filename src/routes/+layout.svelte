@@ -12,7 +12,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="container">
+<div class="site">
 	<header>
 		<a href="/">
 			<img src={logo} alt="logo" class="logo" />
@@ -36,28 +36,29 @@
 </div>
 
 <style>
-	.container {
+	.site {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
+		margin: 0 auto; /* center the site horizontally */
+		max-width: 960px; /* keep content narrow on large screens */
+		padding: 1rem;
 	}
 
 	header {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1rem;
 	}
 
 	.logo {
 		height: 40px;
 	}
-
 	nav {
 		display: flex;
 		gap: 1rem;
 	}
-
 	.icon {
 		height: 24px;
 	}
@@ -68,5 +69,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
+		width: 100%;
 	}
 </style>
