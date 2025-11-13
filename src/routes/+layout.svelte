@@ -81,4 +81,18 @@
 		text-align: center;
 		width: 100%;
 	}
+
+	:global(html) {
+		scrollbar-gutter: stable; /* space for scrollbar in short pages as well*/
+		overflow-y: auto; /* to be tested on other browsers like Firefox  */
+	}
+
+	/* :global(html)::-webkit-scrollbar {
+		width: 0;
+		background: transparent; to hide scrollbar
+	} */
+
+	/* :global(html) {
+		scrollbar-width: none; to be tested on other browsers like Firefox 
+	}  */
 </style>
