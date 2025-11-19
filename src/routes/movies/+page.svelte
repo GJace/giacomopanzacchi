@@ -18,7 +18,7 @@
         class="flex flex-col md:flex-row mb-8 rounded-lg shadow-sm overflow-hidden
            {movie.id % 2 === 0 ? 'md:flex-row-reverse' : ''}"
     >
-        <!-- Poster column – 20 % width -->
+        <!-- Poster 20%==1/5 -->
         <div class="w-full md:w-1/5">
             <img
                 src={movie.poster}
@@ -27,15 +27,15 @@
             />
         </div>
 
-        <!-- Info column – 80 % width -->
+        <!-- Info 80%==4/5 -->
         <div class="w-full md:w-4/5 p-4 flex flex-col justify-between">
-            <!-- Title + Year -->
+            <!-- Title-Year -->
             <div class="flex items-baseline space-x-2 mb-2">
                 <h2 class="text-xl font-semibold">{movie.title}</h2>
                 <span class="text-gray-500">( {movie.year} )</span>
             </div>
 
-            <!-- Watched On + Rating -->
+            <!-- Date-Rating -->
             <div class="flex items-center text-gray-600 mb-2">
                 <span class="mr-4">
                     Watched on: <strong>{movie.watchedOn}</strong>
@@ -45,7 +45,6 @@
                 </span>
             </div>
 
-            <!-- Review (long text) -->
             <p class="text-gray-800 leading-relaxed">
                 {movie.review}
             </p>
